@@ -25,5 +25,3 @@ chrome.storage.local.get(["count"], (count) => {
         MangaPage.setAttribute("href",CSMLink + currentCount)
     }
 })
-
-//document.getElementById("menu-item-7062").setAttribute("href", "my new link");
