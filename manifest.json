@@ -1,0 +1,11 @@
+{
+  "name": "Counter",
+  "description": "Counter for manga website thing",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "media/icon.png"
+  }
+}
