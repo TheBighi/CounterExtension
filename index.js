@@ -44,7 +44,7 @@ async function CheckURL(){
     const url = await GetCurrentURL()
     const match = url.match(/chapter-(\d+)/);
     const chapter = parseInt(match[1], 10);
-    if (currentCount < chapter < currentCount + 2){
+    if (chapter > currentCount && chapter < currentCount + 2){
         SetCount(chapter)
         UpdateUI(chapter)
     }
