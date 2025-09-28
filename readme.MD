@@ -1,4 +1,4 @@
-This is a very simple counter browser extension
+This is a very simple counter browser extension i made for opening a manga chapter with ease without having to remember which chapter u last read
 
 To use yourself:
 
