@@ -32,21 +32,3 @@ IncreaseBTN.onclick = function() {
     console.log("Increase");
     UpdateUI(currentCount);
 }
-
-function GetCurrentURL() {
-  return new Promise((resolve) => {
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      resolve(tabs[0].url);
-    });
-  });
-}
-async function CheckURL(){
-    const url = await GetCurrentURL()
-    const match = url.match(/chapter-(\d+)/);
-    const chapter = parseInt(match[1], 10);
-    if (chapter > currentCount && chapter < currentCount + 2){
-        SetCount(chapter)
-        UpdateUI(chapter)
-    }
-}
-CheckURL()

@@ -7,5 +7,11 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": "media/icon.png"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chainsawmann.com/manga/chainsaw-man-chapter-*/*"],
+      "js": ["content.js"]
+    }
+  ]  
 }
